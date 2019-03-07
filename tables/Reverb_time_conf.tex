@@ -1,0 +1,19 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{sidewaystable}[htbp]
+	\caption{Calculation of the reverberation times in the conference room.}
+	\label{tbl:reverb_conf}
+	\centering
+	\begin{tabular}{@{}m{3cm}rrrrrrrrrrrrrrrrrrrrrr@{}}
+		\toprule
+		Frequency (Hz) & \multicolumn{1}{l}{} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{63} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{125} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{250} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{500} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{1000} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{2000} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{4000} \\ \midrule
+		Surface & \multicolumn{1}{l}{S (m\textsuperscript{2})} & \multicolumn{1}{l}{} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{A} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{A} \\
+		Floor & 32 &  & 0.01 & 0.32 &  & 0.01 & 0.32 &  & 0.02 & 0.64 &  & 0.05 & 1.60 &  & 0.15 & 4.80 &  & 0.30 & 9.60 &  & 0.40 & 12.80 \\
+		Ceiling & 32 &  & 0.74 & 23.68 &  & 0.77 & 24.64 &  & 0.74 & 23.68 &  & 0.68 & 21.76 &  & 0.85 & 27.20 &  & 0.85 & 27.20 &  & 0.80 & 25.60 \\
+		Windows & 8 &  & 0.07 & 0.56 &  & 0.10 & 0.80 &  & 0.07 & 0.56 &  & 0.05 & 0.40 &  & 0.03 & 0.24 &  & 0.02 & 0.16 &  & 0.02 & 0.16 \\
+		Partition wall & 10 &  & 0.12 & 1.20 &  & 0.30 & 3.00 &  & 0.12 & 1.20 &  & 0.08 & 0.80 &  & 0.06 & 0.60 &  & 0.06 & 0.60 &  & 0.05 & 0.50 \\
+		Plastered walls & 42 &  & 0.02 & 0.84 &  & 0.02 & 0.84 &  & 0.03 & 1.26 &  & 0.04 & 1.68 &  & 0.05 & 2.10 &  & 0.07 & 2.94 &  & 0.08 & 3.36 \\ \midrule
+		Total absorption $\Sigma S \alpha = \Sigma A$ (m\textsuperscript{2}) &  &  &  & 26.60 &  &  & 29.60 &  &  & 27.34 &  &  & 26.24 &  &  & 34.94 &  &  & 40.50 &  &  & 42.42 \\
+		Reverberation time T (s) &  &  &  & 0.48 &  &  & 0.44 &  &  & 0.47 &  &  & 0.49 &  &  & 0.37 &  &  & 0.32 &  &  & 0.30 \\ \bottomrule
+	\end{tabular}
+\end{sidewaystable}

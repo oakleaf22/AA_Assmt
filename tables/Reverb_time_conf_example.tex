@@ -1,0 +1,19 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{sidewaystable}[htbp]
+	\caption{Details of the reverberation time calculations at 63~Hz in the conference room.}
+	\label{tbl:reverb_conf_example}
+	\centering
+	\begin{tabular}{@{}lrrrr@{}}
+		\toprule
+		Frequency (Hz) & \multicolumn{1}{l}{} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{63} \\ \midrule
+		Surface & $S$ (m\textsuperscript{2}) & \multicolumn{1}{l}{} & \multicolumn{1}{c}{$\alpha$} & $S \alpha = A$ (m\textsuperscript{2}) \\
+		Floor & $8 \times 4 = 32$ &  & 0.01 & $32 \times 0.01 = 0.32$ \\
+		Ceiling & $8 \times 4 = 32$ &  & 0.74 & $32 \times 0.74 = 23.68$ \\
+		Windows & 8 &  & 0.07 & $8 \times 0.07 = 0.56$ \\
+		Partition wall & $4 \times 2.5 = 10$ &  & 0.12 & $10 \times 0.12 = 1.20$ \\
+		Plastered walls & $2 \times 2.5 (8 + 4) - S_{windows} - S_{partition} = 2 \times 2.5 (8 + 4) - 8 - 10 = 42$ &  & 0.02 & $42 \times 0.02 = 0.84$ \\ \midrule
+		Total absorption (m\textsuperscript{2}) &  &  &  & $\Sigma S \alpha = \Sigma A = 26.60$ \\
+		Reverberation time (s) &  &  &  & $T = \frac{0.161 V_{1}}{\Sigma A} = \frac{0.161 \times 80}{26.60} = 0.48$ \\ \bottomrule
+	\end{tabular}
+\end{sidewaystable}
