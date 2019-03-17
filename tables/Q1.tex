@@ -1,0 +1,22 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[htbp]
+	\caption{Calculation of the SPL in the conference room due to fan noise, L\textsubscript{p\textsubscript{1}}.}
+	\label{tbl:BN_conf}
+	\centering
+	\begin{tabular}{@{}lrrrrrrr@{}}
+		\toprule
+		Frequency (Hz) & 63 & 125 & 250 & 500 & 1000 & 2000 & 4000 \\ \midrule
+		L\textsubscript{W\textsubscript{fan}} (dB re 10\textsuperscript{-12} W) & 92 & 94 & 94 & 93 & 92 & 88 & 84 \\
+		Attn\textsubscript{sound attenuator} (dB) & 6 & 9 & 16 & 27 & 31 & 30 & 21 \\
+		Attn\textsubscript{horizontal} (dB) & 39.6 & 39.6 & 24.9 & 14.7 & 5.85 & 5.85 & 5.85 \\
+		Attn\textsubscript{horizontal $\rightarrow$ vertical} (dB) & 4.77 & 4.77 & 4.77 & 4.77 & 4.77 & 4.77 & 4.77 \\
+		Attn\textsubscript{vertical} (dB) & 1.00 & 1.32 & 1.00 & 0.66 & 0.23 & 0.23 & 0.23 \\
+		Attn\textsubscript{end reflections} (dB) & 11 & 7 & 3 & 1 & 0 & 0 & 0 \\
+		$\Sigma$Attn (dB) & 62.37 & 61.69 & 49.67 & 48.13 & 41.85 & 40.85 & 31.85 \\
+		L\textsubscript{W\textsubscript{out}} (dB re 10\textsuperscript{-12} W) & 29.63 & 32.31 & 44.33 & 44.87 & 50.15 & 47.15 & 52.15 \\
+		T\textsubscript{1} (s) & 0.48 & 0.44 & 0.47 & 0.49 & 0.37 & 0.32 & 0.30 \\
+		SPL in conference room due to single ductwork, L\textsubscript{p\textsubscript{1 single}} (dB) & 21.45 & 23.66 & 36.03 & 36.75 & 40.78 & 37.14 & 41.94 \\
+		SPL in conference room due to supply and return, L\textsubscript{p\textsubscript{1}} (dB) & 24.4 & 26.7 & 39.0 & 39.7 & 43.8 & 40.1 & 44.9 \\ \bottomrule
+	\end{tabular}
+\end{table}

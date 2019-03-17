@@ -3,20 +3,14 @@
 \textbf{\textit{Calculate the sound pressure level in the conference room due to fan noise transmitted through the ductwork (both supply and return).}}
 
 
-The resolution of the SPL in the conference room due to fan noise, L\textsubscript{p\textsubscript{1}}, will first be detailed at 63~Hz.
-Afterwards, the results will be presented at all frequencies.
+The resolution of the SPL in the conference room due to fan noise, L\textsubscript{p\textsubscript{1}}, is detailed at 63~Hz in Table~\ref{tbl:BN_conf_example} and further explained below.
 
 
-\subsection{Sound power level leaving the duct}
+\subsection{Sound power level leaving a duct}
 
-The sound power level leaving a duct is equal to the sound power level that entered the duct minus the sum of all attenuations (assuming all attenuations are positive) (see Equation~\ref{eq:power}).
-
-    \begin{equation}\label{eq:power}
-		L_{W out} = L_{W in} - \Sigma Attn
-	\end{equation}
-	
+The first step is to calculate the sound power level leaving a single ductwork, L\textsubscript{W\textsubscript{out}} (see Equation~\ref{eq:power}).
 In this question, L\textsubscript{W\textsubscript{in}} is the sound power level of the fan.
-These values are provided in Table~1 of the assignment description.
+%These values are provided in Table~1 of the assignment description.
 From the fan to the conference room, the fan noise is attenuated five times:
 \begin{enumerate}
 	\item Within the sound attenuator
@@ -25,6 +19,45 @@ From the fan to the conference room, the fan noise is attenuated five times:
 	\item Along the 0.5~m vertical duct
 	\item At the duct termination due to end reflection losses
 \end{enumerate}
+%, is equal to the sound power level that entered the duct, L\textsubscript{W\textsubscript{in}}, minus the sum of all attenuations (assuming all attenuations are positive) (see Equation~\ref{eq:power}).
 
-The attenuation provided by the sound attenuator are given in Table~5 of the assignment description.
-The length attenuation of the horizontal and vertical ducts are calculated from values given in Table~4 of the assignment description in the following manner: 
+    \begin{equation}\label{eq:power}
+		L_{W out} = L_{W in} - \Sigma Attn
+	\end{equation}
+
+%The attenuation provided by the sound attenuator are given in Table~5 of the assignment description.
+%The length attenuation of the horizontal and vertical ducts are calculated from values given in Table~4 of the assignment description.
+N.B. In the calculation of the attenuation provided by the horizontal duct, we had a choice.
+For x\textsubscript{2} = 400~mm, we could either choose an attenuation of 1.00 or 1.64 at 63~Hz.
+Since we have decided to calculate for a worst case scenario, we chose the lower range of attenuation values (i.e. for a side dimension between 200~mm and 400~mm).
+So the attenuation at 63~Hz, Attn\textsubscript{x\textsubscript{2}63}, is 1.00.
+
+
+\subsection{SPL in the conference room from a single ductwork}
+
+The second step is to calculate the SPL in the conference room from a single ductwork.
+Equation~\ref{eq:SPL} shows how to calculate the SPL in a room.
+
+	\begin{equation}\label{eq:SPL}
+		L_{p} = L_{W} - 10 log \frac{V}{T} + 14
+	\end{equation}
+
+
+\subsection{Sum SPLs from both ducts}
+
+The final step is to sum the SPLs from both the supply and return ducts.
+Since both ducts have the same sound power level entering and the same attenuations, the SPLs are the same.
+For this calculation, we use the rule of thumb for summing two identical SPLs by adding three decibels, i.e. L\textsubscript{p\textsubscript{double}} = L\textsubscript{p\textsubscript{single}} + 3.
+
+
+\subsection{L\textsubscript{p\textsubscript{1}} results at all frequencies}
+
+The L\textsubscript{p\textsubscript{1}} results are presented at all frequencies in Table~\ref{tbl:BN_conf}.
+
+It is interesting to note that the SPLs at 63~Hz and 125~Hz are relatively low.
+This is largely because of the high end reflection losses at low frequencies.
+%The wavelengths are too long to come through the 'grille'; they get bounced back into the vertical duct.
+
+\input{tables/Q1}
+
+\input{tables/Q1_example}

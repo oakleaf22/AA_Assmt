@@ -1,0 +1,30 @@
+\begin{sidewaystable}[htbp]
+	\caption{Details of the calculation of the SPL in the conference room due to fan noise, L\textsubscript{p\textsubscript{1}}, at 63~Hz.}
+	\label{tbl:BN_conf_example}
+	\centering
+	\begin{tabular}{@{}m{5cm}rm{10cm}@{}}
+		\toprule
+		Frequency (Hz) & 63 & Notes \\ \midrule
+		L\textsubscript{W\textsubscript{fan}} (dB re 10\textsuperscript{-12} W) & 92 & Given in Table~1 of assignment description \\
+		&  &  \\
+		Attn\textsubscript{sound attenuator} (dB) & 6 & Given in Table~5 of assignment description \\
+		&  &  \\
+		Attn\textsubscript{horizontal} (dB) & $15 \times (1.64 + 1) = 39.6$ & \begin{tabular}[c]{@{}l@{}}According to Table~4 of assignment description:\\ For x\textsubscript{1} = 600~mm, the attenuation at 63~Hz, Attn\textsubscript{x\textsubscript{1}63}, is 1.64.\\ For x\textsubscript{2} = 400~mm, the attenuation at 63~Hz, Attn\textsubscript{x\textsubscript{2}63}, is 1.00.\\ Length attenuation = duct length $\times$ (Attn\textsubscript{x\textsubscript{1}63} + Attn\textsubscript{x\textsubscript{2}63}).\end{tabular} \\
+		&  &  \\
+		Attn\textsubscript{horizontal $\rightarrow$ vertical} (dB) & 4.77 & $|10 log \frac{S_{vertical}}{S_{vertical} + S_{horizontal}}|$ \\
+		&  &  \\
+		Attn\textsubscript{vertical} (dB) & $0.5 \times (1 + 1) = 1.00$ & Same as notes for Attn\textsubscript{horizontal} \\
+		&  &  \\
+		Attn\textsubscript{end reflections} (dB) & 11 & Given in Table~6 of assignment description for a duct cross-sectional area of 0.3~m $\times$ 0.4~m = 0.12~m\textsuperscript{2} \\
+		&  &  \\
+		$\Sigma$Attn (dB) & 62.37 & Sum of all attenuations \\
+		&  &  \\
+		L\textsubscript{W\textsubscript{out}} (dB re 10\textsuperscript{-12} W) & $92 - 62.37 = 29.63$ & $L_{W out} = L_{W fan} - \Sigma Attn$ \\
+		&  &  \\
+		T\textsubscript{1} (s) & 0.48 & From Table~\ref{tbl:reverb_conf} \\
+		&  &  \\
+		SPL in conference room due to single ductwork, L\textsubscript{p\textsubscript{1 single}} (dB) & $29.63 - 10 log \frac{80}{0.48} + 14 = 21.45$ & \begin{tabular}[c]{@{}l@{}} $L_{p_1 single} = L_{W out} – 10 log \frac{V_1}{T_{1_{63}}} + 14$\end{tabular} \\
+		&  &  \\
+		SPL in conference room due to supply and return, L\textsubscript{p\textsubscript{1}} (dB) & $21.45 + 3 = 24.4$ & Sum of two identical SPLs = $L_p + 3$ \\ \bottomrule
+	\end{tabular}
+\end{sidewaystable}
