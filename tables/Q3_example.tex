@@ -1,0 +1,46 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{sidewaystable}[htbp]
+	\caption{Details of the calculation of the SPL in the single office due to sound transmission of a raised male voice through the ductwork and partition, L\textsubscript{p\textsubscript{male\textsubscript{2}}}, at 63~Hz.}
+	\label{tbl:SPL_office_example}
+	\centering
+	\begin{tabular}{@{}l@{\hspace*{0.5em}}lrm{10.5cm}@{}}% <-- @{} adjusted inter column space
+		\toprule
+		Step & Frequency (Hz) & 63 & Notes \\ \midrule
+		\multirow{5}{*}{1 \vastt\{ } & L\textsubscript{W\textsubscript{male}} (dB re 10\textsuperscript{-12} W) & 62.29 & Read off the chart in Table~7 of assignment description \\
+		& & \multicolumn{1}{l}{} &  \\
+		& T\textsubscript{1} (s) & 0.48 & From Table~\ref{tbl:reverb_conf} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& L\textsubscript{p\textsubscript{male\textsubscript{1}}} (dB) & $62.29 - 10 log \left(\frac{80}{0.48}\right) + 14 = 54.11$ & \begin{tabular}[c]{@{}l@{}}SPL in conference room due to man's voice:\\ $L_{p_{male_1}} = L_{W male} – 10 log \frac{V_1}{T_1} + 14$\end{tabular} \\
+		& & \multicolumn{1}{l}{} &  \\
+		\multirow{21}{*}{2 \Vastt\{ } & L\textsubscript{W\textsubscript{in}} (dB re 10\textsuperscript{-12} W) & $54.11 + 10 log \left(\frac{0.12}{4}\right) = 38.88$ & \begin{tabular}[c]{@{}l@{}}Sound power level entering single ductwork:\\ $L_{W in} = L_{p_{male_1}} + 10 log \frac{S_{vertical}}{4}$\end{tabular} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& Attn\textsubscript{vertical} (dB) & $0.5 \times (1 + 1) = 1.00$ & Same as notes for Attn\textsubscript{vertical} in Table~\ref{tbl:BN_conf_example} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& Attn\textsubscript{vertical $\rightarrow$ horizontal} (dB) & $\left|10 log \frac{0.24}{0.24 + 0.24}\right| = 3.01$ & $\left|10 log \frac{S_{horizontal}}{S_{horizontal} + S_{horizontal}}\right|$ \\
+		& & \multicolumn{1}{l}{} &  \\
+		& Attn\textsubscript{horizontal} (dB) & $4 \times (1 + 1.64) = 10.56$ & Same as notes for Attn\textsubscript{horizontal} in Table~\ref{tbl:BN_conf_example} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& Attn\textsubscript{horizontal $\rightarrow$ vertical} (dB) & $\left|10 log \frac{0.12}{0.12 + 0.24}\right| = 4.77$ & $\left|10 log \frac{S_{vertical}}{S_{vertical} + S_{horizontal}}\right|$ \\
+		& & \multicolumn{1}{l}{} &  \\
+		& Attn\textsubscript{vertical} (dB) & $0.5 \times (1 + 1) = 1.00$ & Same as notes for Attn\textsubscript{vertical} in Table~\ref{tbl:BN_conf_example} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& Attn\textsubscript{end reflections} (dB) & 11 & Given in Table~6 of assignment description for a duct cross-sectional area of 0.3~m $\times$ 0.4~m = 0.12~m\textsuperscript{2} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& $\Sigma$Attn (dB) & 31.34 & Sum of all attenuations \\
+		& & \multicolumn{1}{l}{} &  \\
+		& L\textsubscript{W\textsubscript{out}} (dB re 10\textsuperscript{-12} W) & $38.88 - 31.34 = 7.53$ & \begin{tabular}[c]{@{}l@{}}Sound power level leaving single ductwork: $L_{W out} = L_{W in} - \Sigma Attn$\end{tabular} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& T\textsubscript{2} (s) & 0.47 & From Table~\ref{tbl:reverb_office} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& L\textsubscript{p\textsubscript{male\textsubscript{2}duct}} (dB) & $7.53 - 10 log \left(\frac{50}{0.47}\right) + 14 = 1.26$ & \begin{tabular}[c]{@{}l@{}}SPL in office due to man's voice: $L_{p_{male_2duct}} = L_{W out} – 10 log \frac{V_2}{T_2} + 14$\end{tabular} \\
+		& & \multicolumn{1}{l}{} &  \\
+		\multirow{5}{*}{3 \vastt\{ } & R (dB) & 20 & Given in Table~2 of assignment description \\
+		& & \multicolumn{1}{l}{} &  \\
+		& A\textsubscript{2} (s) & 17.15 & From Table~\ref{tbl:reverb_office} \\
+		& & \multicolumn{1}{l}{} &  \\
+		& L\textsubscript{p\textsubscript{male\textsubscript{2}partition}} (dB) & $54.11 - 20 + 10 log \left(\frac{10}{17.15}\right) = 31.76$ & \begin{tabular}[c]{@{}l@{}}Re-arrange SRI formula to get SPL after partition:\\ $L_{p_{male_2partition}} = L_{p_{male_1}} – R + 10 log \frac{S_{partition}}{A_2}$\end{tabular} \\
+		& & \multicolumn{1}{l}{} &  \\
+		4 & L\textsubscript{p\textsubscript{male\textsubscript{2}}} (dB) & $10 log \left(10^{1.26/10} + 10^{1.26/10} + 10^{31.76/10}\right) = 31.8$ & Sum of three SPLs: through supply duct, return duct and partition \\ \bottomrule
+	\end{tabular}
+\end{sidewaystable}

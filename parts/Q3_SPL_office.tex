@@ -2,3 +2,81 @@
 
 \textbf{\textit{Assuming a raised male voice in the conference room, calculate the sound pressure level in the adjacent single office due to sound transmission through both the ductwork and the common partition.}}
 
+
+The resolution of the SPL in the single office due to the sound transmission of a raised male voice through the ductwork and partition, L\textsubscript{p\textsubscript{male\textsubscript{2}}}, is detailed at 63~Hz in Table~\ref{tbl:SPL_office_example} and further explained below.
+
+
+\subsection{Step 1: Male voice SPL in conference room}
+
+The first step is to calculate the SPL of the raised male voice in the conference room, L\textsubscript{p\textsubscript{male\textsubscript{1}}}.
+This is done by using Equation~\ref{eq:SPL}.
+V\textsubscript{1} is found in Table~\ref{tbl:room_dims} and the other variables are detailed in Table~\ref{tbl:SPL_office_example}.
+
+
+\subsection{Step 2: Sound transmission through a single ductwork}
+
+The second step is to calculate the SPL in the single office due to the sound transmission of the male voice through a single ductwork, L\textsubscript{p\textsubscript{male\textsubscript{2}duct}}.
+This has been done in the following manner:
+\begin{itemize}
+	\item The sound power level entering the duct is calculated using Equation~\ref{eq:power_in}, where L\textsubscript{p} is the SPL in the source room and S is the cross-sectional area of the duct.
+		\begin{equation}\label{eq:power_in}
+			L_{W in} = L_{p} + 10 log \frac{S}{4}
+		\end{equation}
+	\item From the conference room to the single office, the man's voice is attenuated six times, as listed below. The calculations of these attenuations are detailed in Table~\ref{tbl:SPL_office_example}.
+		\begin{enumerate}
+			\item Along the 0.5~m vertical duct
+			\item At the branch
+			\item Along the 4~m horizontal duct
+			\item At the branch
+			\item Along the 0.5~m vertical duct
+			\item At the duct termination due to end reflection losses
+		\end{enumerate}
+	\item The sound power level leaving a single ductwork is calculated using Equation~\ref{eq:power_out}.
+	\item The SPL in the single office due to the sound transmission of the male voice through a single ductwork, L\textsubscript{p\textsubscript{male\textsubscript{2}duct}}, is calculated using Equation~\ref{eq:SPL}. For this, V\textsubscript{2} is found in Table~\ref{tbl:room_dims}.
+\end{itemize}
+
+
+\subsection{Step 3: Sound transmission through the partition}
+
+The third step is to calculate the SPL in the single office due to the sound transmission of the male voice through the partition, L\textsubscript{p\textsubscript{male\textsubscript{2}partition}}.
+For this we re-arrange the Sound Reduction Index (SRI) formula (Equation~\ref{eq:SRI}) to find L\textsubscript{p\textsubscript{male\textsubscript{2}partition}} (Equation~\ref{eq:SRI_rearranged}).
+Note that S in Equations~\ref{eq:SRI} and \ref{eq:SRI_rearranged} is the surface area of the common wall in square metres.
+
+	\begin{equation}\label{eq:SRI}
+		R = L_1 - L_2 + 10 log \frac{S}{A_2}
+	\end{equation}
+	
+	
+	\begin{equation}\label{eq:SRI_rearranged}
+		L_2 = L_1 - R + 10 log \frac{S}{A_2}
+	\end{equation}
+
+\begin{itemize}
+	\item The SRI values of the partition, R, are given in Table~2 of the assignment description.
+	\item The surface area of the partition wall, S\textsubscript{partition}, is found in Table~\ref{tbl:room_dims}.
+	\item The absorption of the single office, A\textsubscript{2}, is found in Table~\ref{tbl:reverb_office}.
+\end{itemize}
+
+The calculation of L\textsubscript{p\textsubscript{male\textsubscript{2}partition}} is detailed in Table~\ref{tbl:SPL_office_example}.
+
+
+\subsection{Step 4: Sound transmission through partition and both ducts}
+
+The final step is to sum the SPLs in the office due to sound transmission through the partition and both the supply and return ducts.
+For this we use Equation~\ref{eq:sum} to calculate the sum of any number of levels.
+See detailed calculation of L\textsubscript{p\textsubscript{male\textsubscript{2}}} in Table~\ref{tbl:SPL_office_example}.
+
+	\begin{equation}\label{eq:sum}
+		L_T = 10 log \left(10^{L_1/10} + 10^{L_2/10} + 10^{L_3/10} + \ldots\right) = 10 log \left(\sum_{i}10^{L_i/10}\right)
+	\end{equation}
+
+
+\subsection{L\textsubscript{p\textsubscript{male\textsubscript{2}}} results at all frequencies}
+
+The L\textsubscript{p\textsubscript{male\textsubscript{2}}} results are presented at all frequencies in Table~\ref{tbl:SPL_office}.
+
+
+
+\input{tables/Q3}
+
+\input{tables/Q3_example}

@@ -1,0 +1,29 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[htbp]
+	\caption{Calculation of the SPL in the single office due to sound transmission of a raised male voice through the ductwork and partition, L\textsubscript{p\textsubscript{male\textsubscript{2}}}.}
+	\label{tbl:SPL_office}
+	\centering
+	\begin{tabular}{@{}l@{\hspace*{0.5em}}lrrrrrrr@{}}% <-- @{} adjusted inter column space
+		\toprule
+		Step & Frequency (Hz) & 63 & 125 & 250 & 500 & 1000 & 2000 & 4000 \\ \midrule
+		\multirow{3}{*}{1 \vast\{ } & L\textsubscript{W\textsubscript{male}} (dB re 10\textsuperscript{-12} W) & 62.29 & 67.43 & 70.00 & 73.53 & 74.71 & 70.00 & 60.00 \\
+		& T\textsubscript{1} (s) & 0.48 & 0.44 & 0.47 & 0.49 & 0.37 & 0.32 & 0.30 \\
+		& L\textsubscript{p\textsubscript{male\textsubscript{1}}} (dB) & 54.11 & 58.78 & 61.70 & 65.41 & 65.34 & 59.99 & 49.79 \\
+		\multirow{11}{*}{2 \Vast\{ } & L\textsubscript{W\textsubscript{in}} (dB re 10\textsuperscript{-12} W) & 38.88 & 43.56 & 46.47 & 50.18 & 50.11 & 44.76 & 34.56 \\
+		& Attn\textsubscript{vertical} (dB) & 1.00 & 1.32 & 1.00 & 0.66 & 0.23 & 0.23 & 0.23 \\
+		& Attn\textsubscript{vertical $\rightarrow$ horizontal} (dB) & 3.01 & 3.01 & 3.01 & 3.01 & 3.01 & 3.01 & 3.01 \\
+		& Attn\textsubscript{horizontal} (dB) & 10.56 & 10.56 & 6.64 & 3.92 & 1.56 & 1.56 & 1.56 \\
+		& Attn\textsubscript{horizontal $\rightarrow$ vertical} (dB) & 4.77 & 4.77 & 4.77 & 4.77 & 4.77 & 4.77 & 4.77 \\
+		& Attn\textsubscript{vertical} (dB) & 1.00 & 1.32 & 1.00 & 0.66 & 0.23 & 0.23 & 0.23 \\
+		& Attn\textsubscript{end reflections} (dB) & 11 & 7 & 3 & 1 & 0 & 0 & 0 \\
+		& $\Sigma$Attn (dB) & 31.34 & 27.98 & 19.42 & 14.02 & 9.80 & 9.80 & 9.80 \\
+		& L\textsubscript{W\textsubscript{out}} (dB re 10\textsuperscript{-12} W) & 7.53 & 15.57 & 27.05 & 36.16 & 40.31 & 34.96 & 24.76 \\
+		& T\textsubscript{2} (s) & 0.47 & 0.41 & 0.46 & 0.48 & 0.36 & 0.31 & 0.30 \\
+		& L\textsubscript{p\textsubscript{male\textsubscript{2}duct}} (dB) & 1.26 & 8.70 & 20.65 & 29.96 & 32.91 & 26.92 & 16.52 \\
+		\multirow{3}{*}{3 \vast\{ } & R (dB) & 20 & 32 & 45 & 52 & 58 & 64 & 61 \\
+		& A\textsubscript{2} (s) & 17.15 & 19.70 & 17.65 & 16.85 & 22.25 & 25.80 & 27.00 \\
+		& L\textsubscript{p\textsubscript{male\textsubscript{2}partition}} (dB) & 31.76 & 23.84 & 14.23 & 11.14 & 3.87 & -8.12 & -15.52 \\
+		4 & L\textsubscript{p\textsubscript{male\textsubscript{2}}} (dB) & 31.8 & 24.1 & 24.1 & 33.0 & 35.9 & 29.9 & 19.5 \\ \bottomrule
+	\end{tabular}
+\end{table}

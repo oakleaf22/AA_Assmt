@@ -33,6 +33,23 @@
 \usepackage{array}
 \usepackage{tabu}
 
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% https://tex.stackexchange.com/questions/6794/about-big-parenthesis-larger-than-bigg
+\makeatletter
+\newcommand{\vast}{\bBigg@{3}}
+\newcommand{\Vast}{\bBigg@{11}}
+\newcommand{\vastt}{\bBigg@{6}}
+\newcommand{\Vastt}{\bBigg@{24}}
+%%
+%% Size from smallest to largest:
+%%\[ ( \big( \Big( \bigg( \Bigg( \vast( \Vast( \vastt( \Vastt(\]
+\makeatother
+
+
 \usepackage{natbib}
 \bibliographystyle{agsm}
 \usepackage[nottoc,numbib]{tocbibind}

@@ -8,7 +8,7 @@ The resolution of the SPL in the conference room due to fan noise, L\textsubscri
 
 \subsection{Sound power level leaving a duct}
 
-The first step is to calculate the sound power level leaving a single ductwork, L\textsubscript{W\textsubscript{out}} (see Equation~\ref{eq:power}).
+The first step is to calculate the sound power level leaving a single ductwork, L\textsubscript{W\textsubscript{out}} (see Equation~\ref{eq:power_out}).
 In this question, L\textsubscript{W\textsubscript{in}} is the sound power level of the fan.
 %These values are provided in Table~1 of the assignment description.
 From the fan to the conference room, the fan noise is attenuated five times:
@@ -21,8 +21,8 @@ From the fan to the conference room, the fan noise is attenuated five times:
 \end{enumerate}
 %, is equal to the sound power level that entered the duct, L\textsubscript{W\textsubscript{in}}, minus the sum of all attenuations (assuming all attenuations are positive) (see Equation~\ref{eq:power}).
 
-    \begin{equation}\label{eq:power}
-		L_{W out} = L_{W in} - \Sigma Attn
+    \begin{equation}\label{eq:power_out}
+		L_{W out} = L_{W in} - \sum Attn
 	\end{equation}
 
 %The attenuation provided by the sound attenuator are given in Table~5 of the assignment description.
@@ -54,9 +54,11 @@ For this calculation, we use the rule of thumb for summing two identical SPLs by
 
 The L\textsubscript{p\textsubscript{1}} results are presented at all frequencies in Table~\ref{tbl:BN_conf}.
 
-It is interesting to note that the SPLs at 63~Hz and 125~Hz are relatively low.
+It is interesting to note that the SPLs at 63~Hz and 125~Hz are low relative to the other SPLs.
 This is largely because of the high end reflection losses at low frequencies.
 %The wavelengths are too long to come through the 'grille'; they get bounced back into the vertical duct.
+
+\textbf{Add details of hrzl to vertical branch attenuation calulation}
 
 \input{tables/Q1}
 
