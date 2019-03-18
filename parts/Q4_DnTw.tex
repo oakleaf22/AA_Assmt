@@ -3,8 +3,15 @@
 \textbf{\textit{Calculate the weighted standardised level difference (D\textsubscript{nT,w}) between the conference room and single office for voice transmission through both the ductwork and the common partition, and discuss the results in terms of privacy.}}
 
 
-\subsection{Step 1: Calculate D\textsubscript{nT}}
+The resolution of (D\textsubscript{nT,w}) between the conference room and single office for voice transmission through both the ductwork and the common partition is detailed and explained at 63~Hz in Sections~\ref{sec:4.1} to \ref{sec:4.3}.
+\ldots
 
+
+\subsection{Step 1: Calculate D\textsubscript{nT}} \label{sec:4.1}
+
+The first step is to calculate the standardised level difference, D\textsubscript{nT}, through the ductwork, through the partition, and through both the ductwork and the partition.
+This is done using Equation~\ref{eq:DnT}.
+Table~\ref{tbl:DnT_example} details the D\textsubscript{nT} calculations at 63~Hz and Table~\ref{tbl:DnT} presents the D\textsubscript{nT} results in octave bands between 63~Hz and 4~kHz.
 
 	\begin{equation}\label{eq:DnT}
 		D_{nT} = L_1 - L_2 + 10 log \frac{T_2}{0.5}
@@ -15,13 +22,26 @@
 \input{tables/Q41_example}
 
 
-\subsection{Step 2: Calculate D\textsubscript{nT,w}}
+\subsection{Step 2: Calculate D\textsubscript{nT,w}} \label{sec:4.2}
+
+The second step is to calculate D\textsubscript{nT,w} through the ductwork, through the partition, and through both the ductwork and the partition.
+However, before we can do this, we need to extrapolate the third octave band values of D\textsubscript{nT}.
+The extrapolation calculation is demonstrated in Table~\ref{tbl:DnT_extrapolation}.
+
+How to get DnTw...
+
+\input{tables/Extrapolation_example}
+	
+\input{tables/DnTw_ductwork}
+
+\input{tables/DnTw_partition}
+
+\input{tables/DnTw_both}
+
+
+\subsection{Step 3: Calculate the SPL in the single office due to fan noise transmitted through the ductwork} \label{sec:4.3}
 
 
 
-\subsection{Step 3: Calculate the SPL in the single office due to fan noise transmitted through the ductwork}
-
-
-
-\subsection{Conversation privacy}
+\subsection{Conversation privacy} \label{sec:4.4}
 

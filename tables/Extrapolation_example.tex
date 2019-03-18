@@ -1,0 +1,19 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[htbp]
+	\caption{A sample calculation of the extrapolation of the third octave band values of D\textsubscript{nT} through the ductwork.}
+	\label{tbl:DnT_extrapolation}
+	\centering
+	\begin{tabular}{@{}rrl@{}}
+		\toprule
+		Frequency (Hz) & D\textsubscript{nT} through ductwork (dB) & Notes \\ \midrule
+		63 & 50 & From Table~\ref{tbl:DnT} \\
+		80 & $50 + \frac{46 - 50}{3} = 48$ &  \\
+		100 & $50 + \frac{2 \times (46 - 50)}{3} = 47$ &  \\
+		125 & 46 & From Table~\ref{tbl:DnT} \\
+		160 & $46 + \frac{38 - 46}{3} = 43$ &  \\
+		200 & $46 + \frac{2 \times (38 - 46)}{3} = 40$ &  \\
+		250 & 38 & From Table~\ref{tbl:DnT} \\
+		\ldots & \ldots & \ldots \\ \bottomrule
+	\end{tabular}
+\end{table}
