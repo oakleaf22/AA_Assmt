@@ -3,11 +3,13 @@
 \textbf{\textit{Calculate the weighted standardised level difference (D\textsubscript{nT,w}) between the conference room and single office for voice transmission through both the ductwork and the common partition, and discuss the results in terms of privacy.}}
 
 
-The resolution of (D\textsubscript{nT,w}) between the conference room and single office for voice transmission through both the ductwork and the common partition is detailed and explained at 63~Hz in Sections~\ref{sec:4.1} to \ref{sec:4.3}.
+
+The resolution of (D\textsubscript{nT,w}) between the conference room and single office for voice transmission through both the ductwork and the common partition is detailed and explained at 63~Hz in Sections~\ref{sec:Q4.1} to \ref{sec:Q4.3}.
 \ldots
 
 
-\subsection{Step 1: Calculate D\textsubscript{nT}} \label{sec:4.1}
+
+\subsection{Step 1: Calculate D\textsubscript{nT}} \label{sec:Q4.1}
 
 The first step is to calculate the standardised level difference, D\textsubscript{nT}, through the ductwork, through the partition, and through both the ductwork and the partition.
 This is done using Equation~\ref{eq:DnT}.
@@ -22,13 +24,24 @@ Table~\ref{tbl:DnT_example} details the D\textsubscript{nT} calculations at 63~H
 \input{tables/Q41_example}
 
 
-\subsection{Step 2: Calculate D\textsubscript{nT,w}} \label{sec:4.2}
+
+\subsection{Step 2: Calculate D\textsubscript{nT,w}} \label{sec:Q4.2}
 
 The second step is to calculate D\textsubscript{nT,w} through the ductwork, through the partition, and through both the ductwork and the partition.
 However, before we can do this, we need to extrapolate the third octave band values of D\textsubscript{nT}.
 The extrapolation calculation is demonstrated in Table~\ref{tbl:DnT_extrapolation}.
 
-How to get DnTw...
+Once the third octave band values are calculated, we can calculate D\textsubscript{nT,w}.
+This is done by summing the positive differences of a standard curve's D\textsubscript{nT} values minus the measured data's D\textsubscript{nT} values.
+The standard curve that gives a sum of differences that is less than or equal to 32~dB (but which is as close as possible to 32~dB) is the D\textsubscript{nT,w}.
+Tables~\ref{tbl:DnTw_ductwork}, \ref{tbl:DnTw_partition} and \ref{tbl:DnTw_both} respectively show the calculation of D\textsubscript{nT,w} through the ductwork, through the partition and through both the ductwork and partition.
+The highlighted cells in the tables show the sum of differences closest to, yet less than, 32~dB and the corresponding D\textsubscript{nT,w} values.
+Subsequently, the D\textsubscript{nT,w} results are:
+\begin{itemize}
+	\item Through the ductwork only: 29~dB
+	\item Through the partition only: 56~dB
+	\item Through both the ductwork and partition: 29~dB
+\end{itemize}
 
 \input{tables/Extrapolation_example}
 	
@@ -39,9 +52,16 @@ How to get DnTw...
 \input{tables/DnTw_both}
 
 
-\subsection{Step 3: Calculate the SPL in the single office due to fan noise transmitted through the ductwork} \label{sec:4.3}
+
+\subsection{Step 3: Calculate the NR value of the single office} \label{sec:Q4.3}
+
+The third step is to calculate the background noise in the single office.
+This is done by calculating the SPL in the office due to fan noise transmitted through the ductwork, much like in Question~1 (Section~\ref{sec:Q1}).
+Then the SPL values are plotted onto an NR curve chart to find the office's NR value, much like in Question~2 (Section~\ref{sec:Q2}).
 
 
 
-\subsection{Conversation privacy} \label{sec:4.4}
+
+
+\subsection{Conversation privacy} \label{sec:Q4.4}
 
