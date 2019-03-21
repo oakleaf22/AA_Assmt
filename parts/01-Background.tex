@@ -3,6 +3,7 @@
 Before we can begin to answer the questions, we must select the materials used and calculate the reverberation times in the conference room and single office.
 
 
+
 \subsection{Materials}
 
 The design team has recommended using a double lightweight partition between the conference room and single office, together with the use of carpeted floors, plastered walls and a suspended ceiling inside the two rooms.
@@ -16,39 +17,16 @@ It is likely that the thin carpet on concrete and 10~mm double glazed windows wi
 It will be interesting to find out whether the cheapest and ``worst performing" materials in the proposed design solution will meet the intelligibility and privacy requirements of the conference room.
 If they do not, one can then consider using more absorptive (and possibly more expensive) materials.
 
+\input{tables/Materials_absorption}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{table}[htbp]
-	\caption{Absorption coefficients of the materials used in the conference room and single office.}
-	\label{tbl:absorption}
-	\centering
-	\begin{tabular}{@{}lrrrrrrr@{}}
-		\toprule
-		Frequency (Hz) & 63 & 125 & 250 & 500 & 1000 & 2000 & 4000 \\ \midrule
-		Thin carpet on concrete & 0.01 & 0.01 & 0.02 & 0.05 & 0.15 & 0.30 & 0.40 \\
-		Plaster on solid backing & 0.02 & 0.02 & 0.03 & 0.04 & 0.05 & 0.07 & 0.08 \\
-		Plasterboard on 100 mm cavity with mineral wool & 0.12 & 0.30 & 0.12 & 0.08 & 0.06 & 0.06 & 0.05 \\
-		Mineral fibre tile, 1000 mm airspace & 0.74 & 0.77 & 0.74 & 0.68 & 0.85 & 0.85 & 0.80 \\
-		Double glazing, 10 mm gap & 0.07 & 0.10 & 0.07 & 0.05 & 0.03 & 0.02 & 0.02 \\ \bottomrule
-	\end{tabular}
-\end{table}
 
 
 \subsubsection{Absorption coefficients}
 
 The materials' absorption coefficients at 63~Hz had to be extrapolated.
-This was done by identifying what types of sound absorbers the materials are and using their properties to estimate the materials' absorption coefficents at 63~Hz (see Figure~\ref{fig:absorbers}).
+This was done by identifying what types of sound absorbers the materials are and using their properties to estimate the materials' absorption coefficients at 63~Hz (see Figure~\ref{fig:absorbers}).
 
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=.6\textwidth]{figures/Absorbers.png}
-	\rule{.8\textwidth}{0.5pt} % use line???
-	\caption{Absorption coefficients of sound absorbers \citep{unit4}.}
-	\label{fig:absorbers}
-\end{figure}
-
+\input{figures/Absorbers}
 
 Carpet is a porous absorber, which absorbs very efficiently at high frequencies.
 Its mid-frequency absorption properties can be improved by increasing its thickness.
@@ -65,15 +43,7 @@ As for the plaster on solid backing, which is neither a porous nor membrane abso
 
 The absorption coefficients of the materials used in the rooms are presented in Table~\ref{tbl:absorption} and Figure~\ref{fig:absorption_coefs}.
 
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{figures/Materials_absorption.png}
-	\rule{\textwidth}{0.5pt} % use line???
-	\caption{Absorption coefficients of the materials used in the conference room and single office.}
-	\label{fig:absorption_coefs}
-\end{figure}
-
+\input{figures/Materials_absorption}
 
 
 
@@ -108,10 +78,4 @@ This might be perceived as uncomfortable by the occupants, especially when they 
 
 \input{tables/Reverb_time_office}
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{figures/Reverb_times.png}
-	\rule{\textwidth}{0.5pt} % use line???
-	\caption{Reverberation times in the conference room and single office.}
-	\label{fig:reverb_times}
-\end{figure}
+\input{figures/Reverb_times}

@@ -1,0 +1,32 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{sidewaystable}[htbp]
+	\caption{Details of the calculation of the SPL in the conference room due to fan noise, L\textsubscript{p\textsubscript{2}}, at 63~Hz.}
+	\label{tbl:BN_office_example}
+	\centering
+	\begin{tabular}{@{}m{5cm}rm{12cm}@{}}
+		\toprule
+		Frequency (Hz) & 63 & Notes \\ \midrule
+		L\textsubscript{W\textsubscript{fan}} (dB re 10\textsuperscript{-12} W) & 92 & Given in Table~1 of assignment description \\
+		& \multicolumn{1}{l}{} &  \\
+		Attn\textsubscript{sound attenuator} (dB) & 6 & Given in Table~5 of assignment description \\
+		& \multicolumn{1}{l}{} &  \\
+		Attn\textsubscript{horizontal} (dB) & $19 \times (1 + 1.64) = 50.16$ & Same as notes for Attn\textsubscript{horizontal} in Table~\ref{tbl:BN_conf_example}, but for a duct length of 19~m \\
+		& \multicolumn{1}{l}{} &  \\
+		Attn\textsubscript{horizontal $\rightarrow$ vertical} (dB) & $\left|10 log \frac{0.12}{0.12 + 0.24}\right| = 4.77$ & $\left|10 log \frac{S_{vertical}}{S_{vertical} + S_{horizontal}}\right|$ \\
+		& \multicolumn{1}{l}{} &  \\
+		Attn\textsubscript{vertical} (dB) & $0.5 \times (1 + 1) = 1.00$ & Same as notes for Attn\textsubscript{vertical} in Table~\ref{tbl:BN_conf_example} \\
+		& \multicolumn{1}{l}{} &  \\
+		Attn\textsubscript{end reflections} (dB) & 11 & Given in Table~6 of assignment description for a duct cross-sectional area of 0.3~m $\times$ 0.4~m = 0.12~m\textsuperscript{2} \\
+		& \multicolumn{1}{l}{} &  \\
+		$\Sigma$Attn (dB) & 72.93 & Sum of all attenuations \\
+		& \multicolumn{1}{l}{} &  \\
+		L\textsubscript{W\textsubscript{out}} (dB re 10\textsuperscript{-12} W) & $92 - 72.93 = 19.07$ & Sound power level leaving single ductwork: $L_{W out} = L_{W fan} - \Sigma Attn$ \\
+		& \multicolumn{1}{l}{} &  \\
+		T\textsubscript{2} (s) & 0.47 & From Table~\ref{tbl:reverb_office} \\
+		& \multicolumn{1}{l}{} &  \\
+		SPL in single office due to single ductwork, L\textsubscript{p\textsubscript{2 single}} (dB) & $19.07 - 10 log \frac{50}{0.47} + 14 = 12.79$ & $L_{p_2 single} = L_{W out} – 10 log \frac{V_2}{T_{2}} + 14$ \\
+		& \multicolumn{1}{l}{} &  \\
+		SPL in single office due to supply and return, L\textsubscript{p\textsubscript{2}} (dB) & $12.79 + 3 = 15.8$ & Sum of two identical SPLs = $L_p + 3$ \\ \bottomrule
+	\end{tabular}
+\end{sidewaystable}

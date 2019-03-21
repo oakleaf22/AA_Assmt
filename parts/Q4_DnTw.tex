@@ -13,11 +13,14 @@ The resolution of (D\textsubscript{nT,w}) between the conference room and single
 
 The first step is to calculate the standardised level difference, D\textsubscript{nT}, through the ductwork, through the partition, and through both the ductwork and the partition.
 This is done using Equation~\ref{eq:DnT}.
-Table~\ref{tbl:DnT_example} details the D\textsubscript{nT} calculations at 63~Hz and Table~\ref{tbl:DnT} presents the D\textsubscript{nT} results in octave bands between 63~Hz and 4~kHz.
+Table~\ref{tbl:DnT_example} details the D\textsubscript{nT} calculations at 63~Hz.
+Table~\ref{tbl:DnT} and Figure~\ref{fig:DnT} present the D\textsubscript{nT} results in octave bands between 63~Hz and 4~kHz.
 
 	\begin{equation}\label{eq:DnT}
 		D_{nT} = L_1 - L_2 + 10 log \frac{T_2}{0.5}
 	\end{equation}
+
+\input{figures/DnT}
 
 \input{tables/Q41}
 
@@ -43,6 +46,8 @@ Subsequently, the D\textsubscript{nT,w} results are:
 	\item Through both the ductwork and partition: 29~dB
 \end{itemize}
 
+The charts in Figures~\ref{fig:DnTw_ductwork}, \ref{fig:DnTw_partition} and \ref{fig:DnTw_both} present the D\textsubscript{nT,w} standard curves with the D\textsubscript{nT} data for the ductwork, partition, and both the ductwork and partition, respectively.
+
 \input{tables/Extrapolation_example}
 	
 \input{tables/DnTw_ductwork}
@@ -51,17 +56,51 @@ Subsequently, the D\textsubscript{nT,w} results are:
 
 \input{tables/DnTw_both}
 
+\input{figures/DnTw_ductwork}
+
+\input{figures/DnTw_partition}
+
+\input{figures/DnTw_both}
+
 
 
 \subsection{Step 3: Calculate the NR value of the single office} \label{sec:Q4.3}
 
 The third step is to calculate the background noise in the single office.
-This is done by calculating the SPL in the office due to fan noise transmitted through the ductwork, much like in Question~1 (Section~\ref{sec:Q1}).
-Then the SPL values are plotted onto an NR curve chart to find the office's NR value, much like in Question~2 (Section~\ref{sec:Q2}).
+To do this, we first need to calculate the SPL in the office due to fan noise transmitted through the ductwork, L\textsubscript{p\textsubscript{2}}.
+As the procedure is very similar to the calculation of L\textsubscript{p\textsubscript{1}} in Question~1 (Section~\ref{sec:Q1}), it will not be explained here.
+Table~\ref{tbl:BN_office_example} details the calculation of L\textsubscript{p\textsubscript{2}} at 63~Hz and Table~\ref{tbl:BN_office} presents the L\textsubscript{p\textsubscript{2}} results in octave bands between 63~Hz and 4~kHz.
 
+Afterwards, the L\textsubscript{p\textsubscript{2}} values are plotted onto an NR curve chart to find the office's NR value, much like in Question~2 (Section~\ref{sec:Q2}).
+As seen in Figure~\ref{fig:NR_office}, the SPLs lie on/ below the NR 50 curve.
+Therefore, the single office's noise rating is NR 50.
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[height=.6\textheight]{figures/NR_office.jpg}
+	\rule{.6\textwidth}{0.5pt} % use line???
+	\caption{The NR of the single office.}
+	\label{fig:NR_office}
+\end{figure}
+
+\input{tables/Q43}
+
+\input{tables/Q43_example}
 
 
 
 \subsection{Conversation privacy} \label{sec:Q4.4}
 
+By summing the D\textsubscript{nT,w} results with the NR rating of the single office, one can deduce whether the conversation with a raised male voice in the conference room can be overheard in the single office.
+Table~\ref{tbl:privacy_criteria} gives the criteria for conversation privacy and Table~\ref{tbl:privacy} presents the sums of D\textsubscript{nT,w} and NR.
+
+As seen in Table~\ref{tbl:privacy}, the conference room conversation is completely inaudible from the single office when you just consider sound transmission through the partition ($D\textsubscript{nT,w} + NR = 106~dB$).
+However, when you consider sound transmission through the ductwork and both the ductwork and partition, the conference room conversation is faintly audible but not intelligible from the single office ($D\textsubscript{nT,w} + NR = 79~dB$).
+These results can be interpreted as follows:
+the partition has enough \textbf{\textit{absorption}} to guarantee privacy in the conference room. 
+The only sound one can overhear from the single office comes through the ductwork.
+That is why the ductwork only and ductwork + partition results are the same (i.e. audible but not intelligible).
+
+\input{tables/Q44_criteria}
+
+\input{tables/Q44}
