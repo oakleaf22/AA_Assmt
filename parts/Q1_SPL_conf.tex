@@ -6,7 +6,7 @@
 The resolution of the SPL in the conference room due to fan noise, L\textsubscript{p\textsubscript{1}}, is detailed at 63~Hz in Table~\ref{tbl:BN_conf_example} and further explained below.
 
 
-\subsection{Sound power level leaving a duct}
+\subsection{Step 1: Sound power level leaving a duct}
 
 The first step is to calculate the sound power level leaving a single ductwork, L\textsubscript{W\textsubscript{out}} (see Equation~\ref{eq:power_out}).
 In this question, L\textsubscript{W\textsubscript{in}} is the sound power level of the fan.
@@ -33,7 +33,7 @@ Since we have decided to calculate for a worst case scenario, we chose the lower
 So the attenuation at 63~Hz, Attn\textsubscript{x\textsubscript{2}63}, is 1.00.
 
 
-\subsection{SPL in the conference room from a single ductwork}
+\subsection{Step 2: SPL in the conference room from a single ductwork}
 
 The second step is to calculate the SPL in the conference room from a single ductwork.
 Equation~\ref{eq:SPL} shows how to calculate the SPL in a room.
@@ -43,7 +43,7 @@ Equation~\ref{eq:SPL} shows how to calculate the SPL in a room.
 	\end{equation}
 
 
-\subsection{Sum SPLs from both ducts}
+\subsection{Step 3: Sum SPLs from both ducts}
 
 The final step is to sum the SPLs from both the supply and return ducts.
 Since both ducts have the same sound power level entering and the same attenuations, the SPLs are the same.
@@ -52,7 +52,7 @@ For this calculation, we use the rule of thumb for summing two identical SPLs by
 
 \subsection{L\textsubscript{p\textsubscript{1}} results at all frequencies}
 
-The L\textsubscript{p\textsubscript{1}} results are presented in octave bands between 63~Hz and 4~kHz in Table~\ref{tbl:BN_conf}.
+Table~\ref{tbl:BN_conf} and Figure~\ref{fig:Lp1+2} present the L\textsubscript{p\textsubscript{1}} results in octave bands between 63~Hz and 4~kHz.
 
 It is interesting to note that the SPLs at 63~Hz and 125~Hz are low relative to the other SPLs.
 This is largely because of the high end reflection losses at low frequencies.
@@ -60,8 +60,8 @@ This is largely because of the high end reflection losses at low frequencies.
 
 \textbf{Add details of hrzl to vertical branch attenuation calculation}
 
-\input{tables/Q1_example}
-
 \input{tables/Q1}
 
-\input{figures/Lp1}
+\input{tables/Q1_example}
+
+%\input{figures/Lp1}

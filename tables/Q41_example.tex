@@ -1,10 +1,10 @@
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
-\begin{sidewaystable}[htbp]
+\begin{table}[htbp]
 	\caption{Details of the calculation of the DnT between the conference room and single office for voice transmission through the ductwork and partition at 63~Hz.}
 	\label{tbl:DnT_example}
 	\centering
-	\begin{tabular}{@{}lrl@{}}
+	\begin{tabular}{@{}m{2.9cm}rl@{}}
 		\toprule
 		Frequency (Hz) & 63 & Notes \\ \midrule
 		L\textsubscript{p\textsubscript{male\textsubscript{1}}} (dB) & 54.11 & From Table~\ref{tbl:SPL_office} \\
@@ -17,4 +17,4 @@
 		D\textsubscript{nT} through partition (dB) & $54.11 - 31.76 + 10 log \left(\frac{0.47}{0.5}\right) = 22.1$ & $D_{nT} = L_{p_{male_1}} - L_{p_{male_2}partition} + 10 log \left(\frac{T_2}{0.5}\right)$ \\
 		D\textsubscript{nT} through ductwork and partition (dB) & $54.11 - 31.77 + 10 log \left(\frac{0.47}{0.5}\right) = 22.1$ & $D_{nT} = L_{p_{male_1}} - L_{p_{male_2}} + 10 log \left(\frac{T_2}{0.5}\right)$ \\ \bottomrule
 	\end{tabular}
-\end{sidewaystable}
+\end{table}
