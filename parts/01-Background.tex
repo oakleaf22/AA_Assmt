@@ -8,13 +8,13 @@ Before we can begin to answer the questions, we must select the materials used a
 
 The design team has recommended using a double lightweight partition between the conference room and single office, together with the use of carpeted floors, plastered walls and a suspended ceiling inside the two rooms.
 According to the assignment description, the suspended ceiling consists of mineral fibre tiles over a 1000~mm air space, and the partition is made up of two 12.5~mm plasterboard sheets on each side of a 100~mm or 120~mm cavity completely filled with mineral wool.
-
 The remaining materials (for the walls, floors and windows) have been selected for a worst case scenario, i.e. these materials have the lowest absorption coefficients amongst their counterparts.
 All materials used in the rooms are presented in Table~\ref{tbl:absorption} along with their absorption coefficients.
 (Note that we are using absorption coefficients for a 100~mm cavity partition.)
 
+\textbf{Remove this paragraph/ set-up?}
 It is likely that the thin carpet on concrete and 10~mm double glazed windows will be the cheapest among their counterparts, since they do not absorb sound as well.
-It will be interesting to find out whether the cheapest and ``worst performing" materials in the proposed design solution will meet the intelligibility and privacy requirements of the conference room.
+It will be interesting to find out whether the cheapest and ``worst performing" materials in the proposed design solution will meet the privacy requirements of the conference room.
 If they do not, one can then consider using more absorptive (and possibly more expensive) materials.
 
 \input{tables/Materials_absorption}
@@ -30,14 +30,14 @@ This was done by identifying what types of sound absorbers the materials are and
 
 Carpet is a porous absorber, which absorbs very efficiently at high frequencies.
 Its mid-frequency absorption properties can be improved by increasing its thickness.
-Since absorption is almost constant between 63~Hz and 125~Hz, we have chosen the absorption coefficient at 63~Hz to be identical to that at 125~Hz (i.e. 0.01).
+Since absorption is almost constant between 63~Hz and 125~Hz according to Figure~\ref{fig:absorbers}, we have chosen the absorption coefficient at 63~Hz to be identical to that at 125~Hz (i.e. 0.01).
 
-Double glazed windows are membrane absorbers, which absorb most effectively at frequencies below 500~Hz.
-Changing the panel mass or depth of the air space can change the frequency of maximum absorption.
-According to Figure~\ref{fig:absorbers}, the absorption coefficients at 63~Hz and 250~Hz are similar, hence we have chosen the absorption coefficient at 63~Hz to be identical to that at 250~Hz (i.e. 0.07).
+The plasterboard partition and double glazed windows are membrane absorbers, which absorb most effectively at frequencies below 500~Hz.
+Changing the panel mass or the depth of the air space can change the frequency of maximum absorption.
+According to Figure~\ref{fig:absorbers}, the absorption coefficients at 63~Hz and 250~Hz are similar, hence we have chosen the absorption coefficients at 63~Hz to be identical to those at 250~Hz (i.e. respectively 0.12 and 0.07).
 
-The cavity-filled partition and mineral fibre suspended ceiling are both porous and membrane absorbers, hence they combine the absorption properties of the two absorber types.
-Since the partition and suspended ceiling behave as membrane absorbers on the lower end of the frequency spectrum, we have chosen the absorption coefficients at 63~Hz to be identical to those at 250~Hz (i.e. respectively 0.12 and 0.74).
+The mineral fibre suspended ceiling is both a porous and membrane absorber, hence it combines the absorption properties of the two absorber types.
+Since the suspended ceiling behaves as a membrane absorber on the lower end of the frequency spectrum, we have chosen the absorption coefficient at 63~Hz to be identical to that at 250~Hz (i.e. 0.74).
 
 As for the plaster on solid backing, which is neither a porous nor membrane absorber, we assumed the absorption coefficient at 63~Hz to be identical to that at 125~Hz (i.e. 0.02) to match the subtle increase of absorption coefficients with frequency.
 
@@ -49,8 +49,8 @@ The absorption coefficients of the materials used in the rooms are presented in 
 
 \subsection{Reverberation times}
 
-The reverberation times of either or both the conference room and single office are needed to calculate the sound pressure levels (SPLs) and standardised level differences (D\textsubscript{nT}) in Questions 1, 3 and 4.
-Equation~\ref{eq:reverb} gives Sabine's formula for calculating the reverberation time, T (s), in a room of volume V (m\textsuperscript{3}) and total absorption $\Sigma$A (m\textsuperscript{2}).
+The reverberation times of the conference room and single office are needed to calculate the sound pressure levels (SPLs) and standardised level differences (D\textsubscript{nT}) in Questions~1, 3 and 4.
+Equation~\ref{eq:reverb} gives Sabine's formula for calculating the reverberation time T (s) in a room of volume V (m\textsuperscript{3}) and total absorption $\Sigma$A (m\textsuperscript{2}).
 The absorption of a surface, A, is the product of the surface area, S (m\textsuperscript{2}), and the surface's absorption coefficient, $\alpha$.
 
     \begin{equation}\label{eq:reverb}
@@ -60,7 +60,7 @@ The absorption of a surface, A, is the product of the surface area, S (m\textsup
 The dimensions and volumes of the conference room and single office are presented in Table~\ref{tbl:room_dims}.
 This information and the absorption coefficients of the surfaces allow us to calculate the reverberation times of the rooms.
 Table~\ref{tbl:reverb_conf_example} provides the details of the calculations at 63~Hz in the conference room.
-Tables~\ref{tbl:reverb_conf} and \ref{tbl:reverb_office} respectively present the calculations at all frequencies in the conference room and single office.
+Tables~\ref{tbl:reverb_conf} and \ref{tbl:reverb_office} present the calculations in octave bands between 63~Hz and 4~kHz in the conference room and single office, respectively.
 
 Figure \ref{fig:reverb_times} presents the reverberation times of the rooms in graphical form.
 The curves are similar because the materials and constructions in the rooms are the same.
